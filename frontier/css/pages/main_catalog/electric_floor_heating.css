@@ -1,0 +1,64 @@
+.main-catalog > p{
+    font-size: 1.3rem;
+}
+
+.card > img {
+    width: 80%;
+}
+
+.text-card {
+    font-size: 1.2rem;
+}
+
+.card {
+    width: 18rem;
+}
+
+.class-card-second > img {
+    width: 150%;
+    object-fit: cover;
+}
+
+.img-second-class {
+    width: auto;
+}
+
+@media (min-width: 1200px) {
+    .img-second-class {
+        padding-top: 3rem !important;
+        padding-bottom: 1rem;
+    }
+
+    .cards-catalog {
+        margin: 0 100px 0 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cards-catalog {
+        margin: 0 200px 0 200px;
+    }
+}
+    
+
+@media (max-width: 992px) {
+    .main-catalog > p {
+        font-size: 30px;
+    }
+    .class-second {
+        margin-top: 30px;
+        /* margin: auto; */
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-catalog {
+        margin: 0 50px 0 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .img-second-class {
+       width: auto;
+    }
+}
