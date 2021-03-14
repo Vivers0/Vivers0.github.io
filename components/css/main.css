@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;500&family=Poppins:wght@300;500&family=Roboto:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Noto+Sans+KR:wght@300&display=swap');
+@font-face {
+    font-family: GodOfWar;
+    src: url(../font/GodOfWar.TTF);
+   }
 
 body {
     background-color: #1A222C;
@@ -22,10 +26,12 @@ header, #projects {
 
 .main-text {
     font-size: 150px;
+    font-family: GodOfWar, sans-serif;
 }
 
 .main-footer {
     font-size: 100px;
+    font-family: GodOfWar, sans-serif;
 }
 
 .icons {
@@ -44,6 +50,7 @@ header, #projects {
 
 .projects-text {
     font-size: 100px;
+    font-family: GodOfWar, sans-serif;
 }
 
 /* Card */
@@ -56,9 +63,17 @@ header, #projects {
     width: 200px;
  }
 
- /* .card {
-     margin-left: 9%;
- } */
+ .card:last-child {
+     display: none;
+ }
+
+ .card:nth-child(-n+4), .card:nth-child(-n+5), .card:nth-child(-n+6) {
+    margin-top: 2rem;
+ }
+
+ .card:not(odd) {
+    margin-left: 2rem;
+ }
 
  .card-title {
      font-size: 30px;

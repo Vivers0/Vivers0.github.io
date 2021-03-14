@@ -36,3 +36,14 @@
     border: 1px solid #939598;
     padding: 5px;
 }
+
+/* .card-image > img {
+    min-height: 200px;
+    max-height: 300px;
+    width: auto;
+} */
+
+.card-image-first {
+    min-height: 350px;
+    max-height: 500px;
+}

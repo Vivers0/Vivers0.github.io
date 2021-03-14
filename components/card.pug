@@ -13,7 +13,7 @@
                 'name': 'StarRevenge',
                 'info': 'Discord bot for StarRevenge project', 
                 'github': 'https://github.com/Vivers0/StarRevenge', 
-                'image': 'https://i.imgur.com/qjNpHZB.png', 
+                'image': 'components/img/starrevenge.png', 
                 'id': 'cardStarRevenge',
                 'class': 'youngel-img',
                 'badge': [{'color': '0f8a3e', 'name': 'node.js'}, {'color': '1690F0', 'name': 'discord.js'}]
@@ -31,7 +31,7 @@
                 'name': 'Glasgow',
                 'info': 'Discord bot for parsing anime theme', 
                 'github': 'https://github.com/Vivers0/Glasgow', 
-                'image': 'https://imgur.com/OB6SJKx.png', 
+                'image': 'components/img/glasgow.png', 
                 'id': 'cardGlasgow',
                 'class': 'youngel-img',
                 'badge': [{'color': '0f8a3e', 'name': 'node.js'}, {'color': '1690F0', 'name': 'discord.js'}]
@@ -40,19 +40,28 @@
                 'name': 'Frontier',
                 'info': 'Offical site "Frontier" in Russia', 
                 'github': '#', 
-                'image': 'https://imgur.com/XG9XjYd.png', 
+                'image': 'components/img/frontier.png', 
                 'id': 'cardFrontier',
                 'class': 'youngel-img',
+                'badge': []
+            },
+            {
+                'name': '',
+                'info': '', 
+                'github': '', 
+                'image': '', 
+                'id': '',
+                'class': '',
                 'badge': []
             }
         ];
 
 for i in cards
-    .card.col-11.bg-secondary.pt-4.youngel-card.col-xl-3.col-lg-3.col-md-3.col-sm-3.ml-sm-5.ml-md-5.ml-lg-5.ml-xl-5
+    .card.bg-secondary.pt-4.youngel-card.col-xl-5.col-lg-4.col-md-6.col-sm-10.ml-sm-5.ml-md-5.ml-lg-5.ml-xl-5
         img(class='rounded mx-auto d-block youngel-img', src=i.image)
         .card-body
             .card-title= i.name
-            p.card-text#i.id= i.info
+            p(class="card-text" id=i.id)= i.info
         .card-badges
             for t in i.badge 
                 span(class='card-badge' style='background-color: #'+t.color)= t.name
