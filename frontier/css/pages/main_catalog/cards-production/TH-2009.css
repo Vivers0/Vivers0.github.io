@@ -91,15 +91,15 @@
     }
 
     .card-image > img:first-child {
-        margin-bottom: 40px;
-        margin-left: 22%;
+        margin-left: 15%;
         margin-right: 22%;
         max-height: 150px;
         width: auto;
     }
 
-    .card-image > img {
+    .model {
         max-height: 150px;
+        margin-left: 15%;
     }
 
     .main-block {
